@@ -304,6 +304,10 @@ img {
 
 .icon-soc-item{}
 
+.team-icon{
+    fill: rgba(244, 244, 253, 1);
+}
+
 .icon-soc-team{
     width: 40px;
         height: 40px;
@@ -312,7 +316,6 @@ img {
         display: flex;
         align-items: center;
         justify-content: center;
-        fill: rgba(244, 244, 253, 1);
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -390,10 +393,7 @@ img {
     font-family: Roboto;
     font-weight: 400;
     font-size: 16px;
-    leading-trim: NONE;
     line-height: 24px;
-    letter-spacing: 2%;
-    font-style: Regular;
     color: rgba(244, 244, 253, 1);
     padding: 40px 32px;
     position: absolute;
