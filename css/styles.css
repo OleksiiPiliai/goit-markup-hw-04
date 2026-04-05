@@ -55,10 +55,14 @@ img {
     padding-right: 15px;
 }
 
+.link-active{
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .link-active:hover,
 .link-active:focus{
     color: rgba(64, 75, 191, 1);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .link-active:active::after{
@@ -95,9 +99,9 @@ img {
 
 .header {
     border-bottom: 1px solid rgba(231, 233, 252, 1);
-    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-    box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .header-dox{
@@ -157,6 +161,8 @@ img {
 /* Hero */
 
 .hero {
+    max-width: 1440px;
+    margin: 0 auto;
     background-color: #2e2f42;
     padding: 188px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7)), url(../images/bgimghero.jpg);
@@ -166,6 +172,8 @@ img {
 }
 
 .hero-box{
+    
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,12 +201,13 @@ img {
     border: none;
     border-radius: 4px;
     margin-top: 48px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
 .hero-button:focus{
     background-color: #404BBF;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Our Features */
@@ -274,9 +283,9 @@ img {
     background-color: #fff;
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-    box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
-    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .icon-soc-list{
@@ -287,20 +296,22 @@ img {
     gap: 24px;
 }
 
-.icon-soc-item{
+.icon-soc-item{}
+
+.icon-soc-team{
     width: 40px;
-    height: 40px;
-    background-color: rgba(77, 90, 229, 1);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    fill: rgba(244, 244, 253, 1);
+        height: 40px;
+        background-color: rgba(77, 90, 229, 1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: rgba(244, 244, 253, 1);
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icon-soc-item:hover{
+.icon-soc-team:hover{
     background-color: rgba(64, 75, 191, 1);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-box{
@@ -347,13 +358,13 @@ img {
 }
 
 .portfolio-item {
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-item:hover{
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-    box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
-    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16), 
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-item:hover .text-hov{
@@ -425,9 +436,20 @@ img {
     gap: 16px;
 }
 
+.icon-footer{
+    width: 40px;
+        height: 40px;
+        background-color: rgba(77, 90, 229, 1);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        fill: rgba(244, 244, 253, 1);
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .icon-footer:hover{
     background-color: rgba(49, 208, 170, 1);
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-logo{
